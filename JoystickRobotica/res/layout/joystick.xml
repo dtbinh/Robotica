@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.example.joystickrobotica.widgets.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="175dip"
+        android:layout_height="175dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:text="X" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewX"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ip:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txt_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:text="192.168." >
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Port:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txt_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text|number" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
